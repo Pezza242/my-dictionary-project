@@ -4,15 +4,21 @@ import "./dictionary.css";
 export default function Dictionary() {
   return (
     <div className="Dictionary">
-      <form className="search-form">
-        <input
-          className="search-bar"
-          type="search"
-          placeholder="Type in a word..."
-          required
-        />
-        <input className="submit" type="submit" value="Search" />
-      </form>
+      <div className="search-box">
+        <h1 className="heading">Dictionary</h1>
+        <h2 className="sub-heading">
+          What word would you like to search today?
+        </h2>
+        <form className="search-form">
+          <input
+            className="search-bar"
+            type="search"
+            placeholder="Type in a word..."
+            required
+          />
+          <input className="submit" type="submit" value="Search" />
+        </form>
+      </div>
     </div>
   );
 }
