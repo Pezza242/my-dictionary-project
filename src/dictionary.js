@@ -16,7 +16,9 @@ export default function Dictionary() {
             placeholder="Type in a word..."
             required
           />
-          <input className="submit" type="submit" value="Search" />
+          <div className="submit">
+            <input className="submit-button" type="submit" value="Search" />
+          </div>
         </form>
       </div>
     </div>
