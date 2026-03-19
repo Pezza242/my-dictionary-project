@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import "./dictionary.css";
 import axios from "axios";
+import Results from "./results";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState();
+  let [results, setResults] = useState({});
 
   function handleResponse(response) {
     console.log(response.data);
+    setResults(response.data);
   }
   function changeKeyword(event) {
     setKeyword(event.target.value);
@@ -39,6 +42,7 @@ export default function Dictionary() {
           </div>
         </form>
       </div>
+      <Results data={results} />
     </div>
   );
 }
