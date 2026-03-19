@@ -2,7 +2,8 @@ import React from "react";
 import Meanings from "./meanings";
 
 export default function Results(props) {
-  if (props.data) {
+  //console.log(props.data.meanings[0].definition);
+  if (props.data && props.data.meanings) {
     return (
       <div className="Results">
         <h1 className="keyword">{props.data.word}</h1>
