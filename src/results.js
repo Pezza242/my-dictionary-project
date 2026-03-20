@@ -6,6 +6,28 @@ export default function Results(props) {
     return (
       <div className="Results">
         <hr />
+        <div className="learn-more">
+          Dictionary
+          <p className="line-2">
+            Definitions from{" "}
+            <a
+              href="https://languages.oup.com/google-dictionary-en/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Oxford Languages
+            </a>
+             · 
+            <a
+              href="https://support.google.com/websearch/answer/10106608?hl=en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Learn more
+            </a>
+          </p>
+        </div>
+
         <section className="results-box">
           <h1 className="keyword">{props.data.word}</h1>
           <h2 className="phonetic">| {props.data.phonetic} |</h2>
