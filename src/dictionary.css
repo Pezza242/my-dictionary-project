@@ -1,6 +1,7 @@
 .search-box {
   background-color: #844a4a;
-  margin: 100px 300px;
+  margin: 0px 300px;
+  margin-top: 90px;
   width: 650px;
   height: 320px;
   border-radius: 20px;
@@ -47,4 +48,33 @@
   background-color: white;
   border: 1px solid white;
   color: #6c1717;
+}
+hr {
+  margin: 40px 0px;
+  border: 0.3px solid white;
+}
+.learn-more {
+  text-align: left;
+}
+.results-box {
+  background-color: #caafaf;
+  color: white;
+  border-radius: 10px;
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-right: 650px;
+  padding: 10px 30px;
+  padding-right: 15px;
+  width: 425px;
+  text-align: left;
+}
+.keyword {
+  font-weight: 300;
+  font-size: 42px;
+  margin-bottom: 0px;
+}
+.phonetic {
+  margin-top: 0px;
+  font-weight: 200;
+  font-size: 22px;
 }
