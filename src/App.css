@@ -4,3 +4,15 @@
 body {
   background-color: #681a1a;
 }
+footer {
+  margin: 25px 0px;
+  margin-right: 35px;
+  color: white;
+}
+.footer-link {
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: #caafaf;
+  text-decoration: underline;
+}

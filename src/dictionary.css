@@ -89,6 +89,10 @@ a:hover {
   font-size: 42px;
   margin-bottom: 0px;
 }
+.part-of-speech {
+  color: #681a1a;
+  font-weight: 500;
+}
 .phonetic {
   margin-top: 0px;
   font-weight: 200;
