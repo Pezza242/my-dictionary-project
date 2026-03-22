@@ -1,8 +1,14 @@
 import React from "react";
 import Meanings from "./meanings";
+import Synonyms from "./synonyms";
 
 export default function Results(props) {
+  let synonyms = [];
+
   if (props.data && props.data.meanings) {
+    synonyms = props.data.meanings.flatMap((meaning) => {
+      return meaning.synonyms || [];
+    });
     return (
       <div className="Results">
         <hr />
@@ -38,6 +44,9 @@ export default function Results(props) {
               </div>
             );
           })}
+        </section>
+        <section className="synonym-box">
+          <Synonyms synonym={synonyms} />
         </section>
       </div>
     );
