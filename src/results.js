@@ -33,21 +33,23 @@ export default function Results(props) {
             </a>
           </p>
         </div>
-
-        <section className="results-box">
-          <h1 className="keyword">{props.data.word}</h1>
-          <h2 className="phonetic">| {props.data.phonetic} |</h2>
-          {props.data.meanings.map(function (meanings, index) {
-            return (
-              <div key={index}>
-                <Meanings meaning={meanings} />
-              </div>
-            );
-          })}
-        </section>
-        <section className="synonym-box">
-          <Synonyms synonym={synonyms} />
-        </section>
+        <div className="results-columns">
+          <section className="results-box">
+            <h1 className="keyword">{props.data.word}</h1>
+            <h2 className="phonetic">| {props.data.phonetic} |</h2>
+            {props.data.meanings.map(function (meanings, index) {
+              return (
+                <div key={index}>
+                  <Meanings meaning={meanings} />
+                </div>
+              );
+            })}
+          </section>
+          <section className="synonym-box">
+            <h1 className="similar-words">Similar words:</h1>
+            <Synonyms synonym={synonyms} />
+          </section>
+        </div>
       </div>
     );
   } else {
