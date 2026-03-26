@@ -72,6 +72,15 @@ a {
 a:hover {
   text-decoration: none;
 }
+.Results {
+  display: block;
+  margin: 0px auto;
+  overflow: hidden;
+  min-width: 1280px;
+}
+hr {
+  min-width: 1210px;
+}
 .results-columns {
   display: inline-flex;
 }
