@@ -1,6 +1,8 @@
 import React from "react";
+import "./results.css";
 import Meanings from "./meanings";
 import Synonyms from "./synonyms";
+import Photos from "./photos";
 
 export default function Results(props) {
   let synonyms = [];
@@ -45,10 +47,15 @@ export default function Results(props) {
               );
             })}
           </section>
-          <section className="synonym-box">
-            <h1 className="similar-words">Similar words:</h1>
-            <Synonyms synonym={synonyms} />
-          </section>
+          <div className="right">
+            <section className="synonym-box">
+              <h1 className="similar-words">Similar words:</h1>
+              <Synonyms synonym={synonyms} />
+            </section>
+            <section className="photos-box">
+              <Photos photos={props.photo} />
+            </section>
+          </div>
         </div>
       </div>
     );
