@@ -38,7 +38,7 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <div className="search-box">
+      <div id="search-box" className="container-fluid">
         <h1 className="heading">Dictionary</h1>
         <h2 className="sub-heading">
           What word would you like to search today?

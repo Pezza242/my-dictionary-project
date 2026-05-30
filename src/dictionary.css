@@ -1,6 +1,22 @@
-.search-box {
+@media (max-width: 650px) {
+  #search-box {
+    max-width: 400px;
+  }
+  .search-bar {
+    max-width: 300px;
+  }
+}
+@media (max-width: 400px) {
+  #search-box {
+    max-width: 350px;
+  }
+  .search-bar {
+    max-width: 250px;
+  }
+}
+#search-box {
   background-color: #844a4a;
-  margin: 0px 300px;
+  margin: 0px auto;
   margin-top: 90px;
   width: 650px;
   height: 320px;

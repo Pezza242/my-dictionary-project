@@ -1,3 +1,26 @@
+@media (max-width: 650px) {
+  .learn-more {
+    margin-left: 20px;
+  }
+  .results-box {
+    max-width: 400px;
+    margin-left: 10px;
+    margin-right: 25px;
+  }
+  .right {
+    padding: 0px;
+    margin-top: 20px;
+    position: relative;
+    right: 10px;
+  }
+  .synonym-box {
+    max-width: 300px;
+  }
+  .photos-box {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+}
 hr {
   margin: 40px 35px;
   border: 0.3px solid white;
@@ -13,7 +36,6 @@ hr {
   font-weight: 300;
   font-size: 14px;
   margin: 0px;
-  margin-left: 150px;
 }
 a {
   color: white;
@@ -26,8 +48,8 @@ a:hover {
   margin: 0px auto;
   overflow: hidden;
 }
-.results-columns {
-  display: inline-flex;
+#results-columns {
+  margin: 0px 20px;
 }
 .results-box {
   background-color: #caafaf;
@@ -35,7 +57,7 @@ a:hover {
   border-radius: 10px;
   margin-top: 25px;
   margin-left: 0px;
-  margin-right: 100px;
+  margin-right: 50px;
   padding: 10px 30px;
   padding-right: 15px;
   width: 450px;
@@ -58,6 +80,9 @@ a:hover {
 }
 .definition {
   font-size: 18px;
+}
+.right {
+  margin-right: 20px;
 }
 .synonym-box {
   background-color: #844a4a;
@@ -90,8 +115,17 @@ a:hover {
   margin: 6px 8px;
 }
 .photos-box {
+  margin: 0px auto;
   margin-top: 30px;
   background-color: #844a4a;
   padding: 30px 0px;
   border-radius: 10px;
+  width: 400px;
+}
+.picture {
+  margin: 5px 0px;
+}
+.picture:hover {
+  transform: scale(1.25);
+  transition: all 150ms ease-in-out;
 }
